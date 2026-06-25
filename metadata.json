@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Ikode",
+  "description": "A comprehensive Property Management SaaS platform with real-time landlord and tenant dashboards, lease tracking, maintenance workflows, and photo galleries.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

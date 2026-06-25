@@ -1,0 +1,413 @@
+{
+  "users": [
+    {
+      "id": "u-admin",
+      "email": "dundanarcos@gmail.com",
+      "name": "Dundan Arcos",
+      "role": "admin"
+    },
+    {
+      "id": "u1",
+      "email": "landlord@karemo.com",
+      "name": "James Karemo",
+      "role": "landlord"
+    },
+    {
+      "id": "u2",
+      "email": "tenant1@gmail.com",
+      "name": "Henry",
+      "role": "tenant"
+    },
+    {
+      "id": "u3",
+      "email": "tenant2@gmail.com",
+      "name": "John Doe",
+      "role": "tenant"
+    },
+    {
+      "id": "u4",
+      "email": "tech@karemo.com",
+      "name": "Marcus Sparks",
+      "role": "technician"
+    },
+    {
+      "id": "u-1782217022960",
+      "email": "manager@gmail.com",
+      "name": "Manager ",
+      "role": "property_manager"
+    }
+  ],
+  "properties": [
+    {
+      "id": "prop-1",
+      "name": "Oakridge Heights",
+      "address": "124 Sunset Blvd, Los Angeles, CA 90028",
+      "description": "Luxury high-rise complex with an infinity pool, 24/7 lobby concierge, and state-of-the-art conditioning space.",
+      "photos": [
+        "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=800&q=80",
+        "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80"
+      ]
+    },
+    {
+      "id": "prop-2",
+      "name": "Pinecrest Garden Apartments",
+      "address": "88 Pine St, Seattle, WA 98101",
+      "description": "Charming courtyard layout styled after classic Swiss mid-century estates, framed by towering brick walls.",
+      "photos": [
+        "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?auto=format&fit=crop&w=800&q=80"
+      ]
+    }
+  ],
+  "units": [
+    {
+      "id": "unit-101",
+      "propertyId": "prop-1",
+      "number": "A101",
+      "type": "2 Bedroom, 2 Bath Penthouse",
+      "rentAmount": 3200,
+      "status": "occupied",
+      "photos": [
+        "https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=800&q=80"
+      ]
+    },
+    {
+      "id": "unit-102",
+      "propertyId": "prop-1",
+      "number": "B102",
+      "type": "1 Bedroom Studio Cozy",
+      "rentAmount": 1850,
+      "status": "occupied",
+      "photos": [
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+      ]
+    },
+    {
+      "id": "unit-103",
+      "propertyId": "prop-1",
+      "number": "C103",
+      "type": "3 Bedroom Family Haven",
+      "rentAmount": 4200,
+      "status": "vacant",
+      "photos": [
+        "https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80"
+      ]
+    },
+    {
+      "id": "unit-201",
+      "propertyId": "prop-2",
+      "number": "Garden-1",
+      "type": "1 Bedroom Loft Loft",
+      "rentAmount": 1600,
+      "status": "vacant",
+      "photos": [
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?auto=format&fit=crop&w=800&q=80"
+      ]
+    },
+    {
+      "id": "unit-202",
+      "propertyId": "prop-2",
+      "number": "Garden-2",
+      "type": "2 Bedroom Terraced Unit",
+      "rentAmount": 2400,
+      "status": "vacant",
+      "photos": []
+    }
+  ],
+  "leases": [
+    {
+      "id": "lease-101",
+      "unitId": "unit-101",
+      "propertyId": "prop-1",
+      "tenantEmail": "tenant1@gmail.com",
+      "startDate": "2026-01-01",
+      "endDate": "2026-12-31",
+      "rentAmount": 3200,
+      "status": "active",
+      "history": [
+        {
+          "id": "lh-101-1",
+          "date": "2026-01-01T08:00:00Z",
+          "action": "created",
+          "details": "Initial lease agreement finalized for 12 months.",
+          "changedBy": "landlord@karemo.com"
+        }
+      ]
+    },
+    {
+      "id": "lease-102",
+      "unitId": "unit-102",
+      "propertyId": "prop-1",
+      "tenantEmail": "tenant2@gmail.com",
+      "startDate": "2026-02-15",
+      "endDate": "2027-02-14",
+      "rentAmount": 1850,
+      "status": "active",
+      "history": [
+        {
+          "id": "lh-102-1",
+          "date": "2026-02-15T09:30:00Z",
+          "action": "created",
+          "details": "Lease contract activated, move-in checklists cleared.",
+          "changedBy": "landlord@karemo.com"
+        }
+      ]
+    },
+    {
+      "id": "lease- SwissHistory",
+      "unitId": "unit-201",
+      "propertyId": "prop-2",
+      "tenantEmail": "tenant1@gmail.com",
+      "startDate": "2025-05-01",
+      "endDate": "2026-05-01",
+      "rentAmount": 1600,
+      "status": "ended",
+      "history": [
+        {
+          "id": "lh-sh-1",
+          "date": "2025-05-01T10:00:00Z",
+          "action": "created",
+          "details": "First floor lease created by landlord.",
+          "changedBy": "landlord@karemo.com"
+        },
+        {
+          "id": "lh-sh-2",
+          "date": "2026-05-01T11:00:00Z",
+          "action": "ended",
+          "details": "Lease ended formally. Key returned, room vacant.",
+          "changedBy": "landlord@karemo.com"
+        }
+      ]
+    }
+  ],
+  "maintenance": [
+    {
+      "id": "maint-1",
+      "unitId": "unit-101",
+      "propertyId": "prop-1",
+      "title": "Kitchen Sink Leakage",
+      "description": "Water leaks constantly underneath the kitchen cabinet. Need a pipe swap or sealing.",
+      "category": "plumbing",
+      "priority": "high",
+      "status": "completed",
+      "tenantEmail": "tenant1@gmail.com",
+      "assignedTechEmail": "tech@karemo.com",
+      "photos": [
+        "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?auto=format&fit=crop&w=800&q=80"
+      ],
+      "logs": [
+        {
+          "id": "log-1-1",
+          "date": "2026-06-19T14:45:00Z",
+          "status": "pending",
+          "updatedBy": "tenant1@gmail.com",
+          "comments": "Issue filed. Under-sink floorboards getting damp."
+        },
+        {
+          "id": "log-1-2",
+          "date": "2026-06-20T09:00:00Z",
+          "status": "assigned",
+          "updatedBy": "landlord@karemo.com",
+          "comments": "Assigned Marcus (tech@karemo.com) to perform a check."
+        },
+        {
+          "id": "ml-assign-1782216280647",
+          "date": "2026-06-23T12:04:40.647Z",
+          "status": "assigned",
+          "updatedBy": "dundanarcos@gmail.com",
+          "comments": "Assigned job to technician Marcus Sparks (tech@karemo.com)."
+        },
+        {
+          "id": "ml-prog-1782227744942",
+          "date": "2026-06-23T15:15:44.942Z",
+          "status": "completed",
+          "updatedBy": "tech@karemo.com",
+          "comments": "it's done well "
+        }
+      ]
+    }
+  ],
+  "payments": [
+    {
+      "id": "pay-1782226120296",
+      "leaseId": "lease-101",
+      "tenantEmail": "tenant1@gmail.com",
+      "date": "2026-06-23T14:48:40.296Z",
+      "amount": 3200,
+      "description": "Direct rent payment processed by Property Manager for July 2026",
+      "reference": "MANUAL-118977-RWA",
+      "status": "successful"
+    },
+    {
+      "id": "pay-seed-1",
+      "leaseId": "lease-101",
+      "tenantEmail": "tenant1@gmail.com",
+      "date": "2026-05-01T08:00:00Z",
+      "amount": 3200,
+      "description": "May rent payment - Oakridge Heights A101",
+      "reference": "MOMO-102948102-RWA",
+      "status": "successful"
+    },
+    {
+      "id": "pay-seed-2",
+      "leaseId": "lease-101",
+      "tenantEmail": "tenant1@gmail.com",
+      "date": "2026-06-01T09:30:00Z",
+      "amount": 3200,
+      "description": "June rent payment - Oakridge Heights A101",
+      "reference": "MOMO-930485710-RWA",
+      "status": "successful"
+    },
+    {
+      "id": "pay-seed-3",
+      "leaseId": "lease-102",
+      "tenantEmail": "tenant2@gmail.com",
+      "date": "2026-06-01T15:15:00Z",
+      "amount": 1850,
+      "description": "June rent payment - Oakridge Heights B102",
+      "reference": "MOMO-374928174-RWA",
+      "status": "successful"
+    }
+  ],
+  "documents": [
+    {
+      "id": "doc-seed-1",
+      "title": "Mutual Residential Regulations & Bylaws 2026",
+      "propertyId": "prop-1",
+      "fileName": "Oakridge_Heights_House_Rules_2026.pdf",
+      "fileSize": "1.2 MB",
+      "category": "bylaw",
+      "uploadedAt": "2026-01-10T10:00:00Z",
+      "uploadedBy": "landlord@karemo.com"
+    },
+    {
+      "id": "doc-seed-2",
+      "title": "Emergency Evacuation Plan & Fire Safety Map",
+      "propertyId": "prop-1",
+      "fileName": "Oakridge_Fire_Safety_Map.pdf",
+      "fileSize": "4.8 MB",
+      "category": "other",
+      "uploadedAt": "2026-01-15T09:30:00Z",
+      "uploadedBy": "landlord@karemo.com"
+    },
+    {
+      "id": "doc-seed-3",
+      "title": "Water Tank Sanitation Certificate & Maintenance Notice",
+      "propertyId": "prop-2",
+      "fileName": "Pinecrest_Sanitation_Notice.pdf",
+      "fileSize": "750 KB",
+      "category": "other",
+      "uploadedAt": "2026-03-01T15:00:00Z",
+      "uploadedBy": "landlord@karemo.com"
+    }
+  ],
+  "messages": [
+    {
+      "id": "msg-seed-1",
+      "senderEmail": "landlord@karemo.com",
+      "senderName": "James Karemo",
+      "receiverEmail": "tenant1@gmail.com",
+      "content": "Hello Henry, welcome to Oakridge Heights unit A101! Let me know if you need anything regarding your lease or move-in checklists.",
+      "timestamp": "2026-06-18T10:00:00Z",
+      "read": true
+    },
+    {
+      "id": "msg-seed-2",
+      "senderEmail": "tenant1@gmail.com",
+      "senderName": "Henry",
+      "receiverEmail": "landlord@karemo.com",
+      "content": "Thank you James! The place is lovely. I filed a small request for the kitchen sink since there is a minor leak under the cabinets.",
+      "timestamp": "2026-06-19T14:40:00Z",
+      "read": true
+    },
+    {
+      "id": "msg-seed-3",
+      "senderEmail": "landlord@karemo.com",
+      "senderName": "James Karemo",
+      "receiverEmail": "tenant1@gmail.com",
+      "content": "Got it, I've assigned our technician Marcus to come take a look at it. He should coordinate with you shortly.",
+      "timestamp": "2026-06-20T09:05:00Z",
+      "read": true
+    },
+    {
+      "id": "msg-1782217090987",
+      "senderEmail": "manager@gmail.com",
+      "senderName": "Manager ",
+      "receiverEmail": "tenant1@gmail.com",
+      "content": "its okay",
+      "timestamp": "2026-06-23T12:18:10.987Z",
+      "read": false
+    },
+    {
+      "id": "msg-1782217150074",
+      "senderEmail": "manager@gmail.com",
+      "senderName": "Manager ",
+      "receiverEmail": "tenant2@gmail.com",
+      "content": "hello how is the kigali Treating you!",
+      "timestamp": "2026-06-23T12:19:10.074Z",
+      "read": false
+    },
+    {
+      "id": "msg-1782217231709",
+      "senderEmail": "tenant2@gmail.com",
+      "senderName": "John Doe",
+      "receiverEmail": "landlord@karemo.com",
+      "content": "He'll Karemo!",
+      "timestamp": "2026-06-23T12:20:31.709Z",
+      "read": false
+    },
+    {
+      "id": "msg-1782220124848",
+      "senderEmail": "landlord@karemo.com",
+      "senderName": "James Karemo",
+      "receiverEmail": "tenant2@gmail.com",
+      "content": "hello jOhn I hope you're enjoying your stay!",
+      "timestamp": "2026-06-23T13:08:44.848Z",
+      "read": false
+    },
+    {
+      "id": "msg-1782220186352",
+      "senderEmail": "tenant2@gmail.com",
+      "senderName": "John Doe",
+      "receiverEmail": "manager@gmail.com",
+      "content": "it's great I'm enjoying the stay",
+      "timestamp": "2026-06-23T13:09:46.352Z",
+      "read": false
+    },
+    {
+      "id": "msg-1782226110665",
+      "senderEmail": "manager@gmail.com",
+      "senderName": "Manager ",
+      "receiverEmail": "tenant1@gmail.com",
+      "content": "⚠️ Rent Delinquency Reminder: Outstanding rent amount of 3,200 FRW due for the month of July 2026 is pending. Please settle via MTN MoMo in your Tenant Portal at your earliest convenience or contact your property manager David Mugisha. Thank you!",
+      "timestamp": "2026-06-23T14:48:30.665Z",
+      "read": false
+    },
+    {
+      "id": "msg-1782227278374",
+      "senderEmail": "dundanarcos@gmail.com",
+      "senderName": "Dundan Arcos",
+      "receiverEmail": "tenant2@gmail.com",
+      "content": "hello",
+      "timestamp": "2026-06-23T15:07:58.374Z",
+      "read": false
+    },
+    {
+      "id": "msg-1782227509764",
+      "senderEmail": "tenant1@gmail.com",
+      "senderName": "Henry",
+      "receiverEmail": "manager@gmail.com",
+      "content": "it's okay",
+      "timestamp": "2026-06-23T15:11:49.764Z",
+      "read": false
+    },
+    {
+      "id": "msg-1782227634032",
+      "senderEmail": "landlord@karemo.com",
+      "senderName": "James Karemo",
+      "receiverEmail": "tenant2@gmail.com",
+      "content": "yes of course but I have a issue with the wifi",
+      "timestamp": "2026-06-23T15:13:54.032Z",
+      "read": false
+    }
+  ]
+}
